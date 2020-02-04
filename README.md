@@ -16,13 +16,7 @@ So how can we model a neuron? Let's look at a mathematical model of a neuron tha
 
 <img src="images/percepton.png" width="600">
 
-The Perceptron is nothing more than a collection of McCulloch and Pitts neurons together.
-
-<img src="images/perceptron_2.png" width="600">
-
-As a side note, we can choose from many different activations functions. A very common one for machine learning is the sigmoid function, which we will use here.
-
-The input to the perceptron is the weighted sum of inputs:
+The input to the Perceptron is the weighted sum of inputs:
 
 z = w0 + w1 * x1 + w2 * x2 + ... + xn * xn
 
@@ -30,9 +24,11 @@ We use the activation function to decide whether the output (we call this our hy
 
 h = g(z) where g is the sigmoid function
 
- As such, the Perceptron creates a linear boundary to separate data. We can use the Perceptron as a linear classifier. 
+As a side note, we can choose from *many* different activations functions. A very common one for machine learning is the sigmoid function, which we will use here.
 
- A very popular example in machine learning is to train a percepton to learn logic functions (logic gates): AND, OR, etc. 
+It can hopefully be seen that the Perceptron creates a linear boundary to separate data. As such, we can use the Perceptron as a linear classifier. 
+
+ A very popular example in machine learning is to train a percepton to learn logic functions (logic gates): AND, OR, etc. This is what we will do next.
 
 ```python
 import numpy as np
