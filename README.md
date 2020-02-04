@@ -2,7 +2,7 @@
 
 Perceptron implemented in Python using (1) numpy and (2) TensorFlow 2
 
-## So, what exactly is a Perceptron?
+## So, What's a Perceptron?
 
 For us humans, learning occurs within the brain. If we understand how the brain works, it follows that we could try to model it for machine learning, right? So we ask ourselves: how exactly does the brain work?
 
