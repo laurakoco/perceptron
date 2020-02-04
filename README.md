@@ -39,9 +39,13 @@ num_iter = 2000
 learning_rate = 0.01
 ```
 
-Here, the learning rate (n) tells us how much to adjust our weights each iteration:
+Here, the learning rate (sometimes abbreviated n or alpha) tells us how much to adjust our weights each iteration:
 
-w <-- w - n(y-h)*x
+w <-- w - alpha * (y - h) * x
+
+Here y is the expected output. 
+
+Deriving the formula for updating the weights can be a bit of work so let's skip that for now.
 
 ```python
 x = np.array([[0, 0], [1, 0], [1, 1], [0, 1]], np.float32) # input
