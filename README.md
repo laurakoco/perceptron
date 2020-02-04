@@ -16,17 +16,17 @@ So how can we model a neuron? Let's look at a mathematical model of a neuron tha
 
 <img src="images/percepton.png" width="600">
 
-The input to the Perceptron is the weighted sum of inputs:
+The input is the weighted sum of inputs:
 
 z = w0 + w1 * x1 + w2 * x2 + ... + xn * xn
 
-We use the activation function to decide whether the output (we call this our hypothesis h) fires or not.
+We use the activation function (on the sum of inputs z) to decide whether the output (we call this our hypothesis h) fires or not.
 
 h = g(z) where g is the sigmoid function
 
 As a side note, we can choose from *many* different activations functions. A very common one for machine learning is the sigmoid function, which we will use here.
 
-It can hopefully be seen that the Perceptron creates a linear boundary to separate data. As such, we can use the Perceptron as a linear classifier. 
+It can hopefully be seen that this will create a linear boundary to separate data. As such, we can use the Perceptron as a linear classifier. 
 
  A very popular example in machine learning is to train a percepton to learn logic functions (logic gates): AND, OR, etc. This is what we will do next.
 
