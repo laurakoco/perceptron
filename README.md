@@ -18,7 +18,7 @@ So how can we model a neuron? Let's look at a mathematical model of a neuron tha
 
 The Perceptron is nothing more than a collection of McCulloch and Pitts neurons together.
 
-<img src="images/percepton_2.png" width="600">
+<img src="images/perceptron_2.png" width="600">
 
 As a side note, we can choose from many different activations functions. A very common one for machine learning is the sigmoid function, which we will use here.
 
