@@ -12,6 +12,8 @@ The processing unit of the brain is the neuron. Transmitter chemicals within the
 
 Each neuron can be viewed as a separate processor, performing a very simple computation: deciding whether or not to fire. 
 
+## Modeling a Neuron
+
 So how can we model a neuron? Let's look at a mathematical model of a neuron that was introduced in 1943 by Warren McCulloch and Walter Pitts. 
 
 <img src="images/percepton.png" width="600">
@@ -27,6 +29,8 @@ h = g(z) where g is the sigmoid function
 As a side note, we can choose from *many* different activations functions. A very common one for machine learning is the sigmoid function, which we will use here.
 
 It can hopefully be seen that this will create a linear boundary to separate data. As such, we can use the Perceptron as a linear classifier. 
+
+## Using Perceptron for Logical Functions
 
  A very popular example in machine learning is to train a percepton to learn logic functions (logic gates): AND, OR, etc. This is what we will do next.
 
