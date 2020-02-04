@@ -1,10 +1,10 @@
 # Perceptron
 
-Perceptron implemented in Python using (1) numpy and (2) TensorFlow 2.
+Perceptron implemented in Python using (1) numpy and (2) TensorFlow 2
 
 ## So, what exactly is a Perceptron?
 
-For us humans, learning occurs within the brain. If we understand how the brain works, it follows that we could try to model it for machine learning, right? So how exactly does the brain work?
+For us humans, learning occurs within the brain. If we understand how the brain works, it follows that we could try to model it for machine learning, right? So we ask ourselves: how exactly does the brain work?
 
 The processing unit of the brain is the neuron. Transmitter chemicals within the fluid of the brain raise or lower the electrical potential inside the body of the neuron. If this membrane potential reaches some threshold, the neuron spikes or fires, and a pulse of fixed strength and duration is sent down the axon. The axons divide into connections to many other neurons; connecting to each of these neurons in a synapse. Each neuron is typically connected to thousands of other neurons.
 
@@ -16,15 +16,17 @@ So how can we model a neuron? Let's look at a mathematical model of a neuron tha
 
 <img src="images/percepton.png" width="600">
 
-We can choose from many different activations functions. A very common one for machine learning is the sigmoid function, which we will use.
-
 The Perceptron is nothing more than a collection of McCulloch and Pitts neurons together.
+
+<img src="images/percepton_2.png" width="600">
+
+As a side note, we can choose from many different activations functions. A very common one for machine learning is the sigmoid function, which we will use here.
 
 The input to the perceptron is the weighted sum of inputs:
 
-z = w0 + w1*x1 + w2*x2 + ... + xn*xn
+z = w0 + w1 * x1 + w2 * x2 + ... + xn * xn
 
-We can use the sigmoid function to decide whether the output (we call this our hypothesis h) fires or not. 
+We use the activation function to decide whether the output (we call this our hypothesis h) fires or not.
 
 h = g(z) where g is the sigmoid function
 
