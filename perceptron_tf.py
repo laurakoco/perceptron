@@ -2,6 +2,8 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
+
+# laura added these lines to make tf 1 code compatible w/ tf 2
 import tensorflow.compat.v1 as tf
 tf.disable_v2_behavior()
 
